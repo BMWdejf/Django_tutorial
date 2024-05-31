@@ -2,3 +2,4 @@ Django==4.1.3
 psycopg2-binary
 python-dotenv
 djangorestframework
+django-cors-headers
