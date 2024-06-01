@@ -85,6 +85,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'core.wsgi.application'
 
+GRAPHENE = {
+    "SCHEMA": "api.schema.schema"
+}
+
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
