@@ -34,9 +34,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', 'localhost', '.now.sh', '*']
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-
     "http://localhost:3000",
-    "https://django-tutorial-one.vercel.app/graphql",
     "https://django-tutorial-one.vercel.app/",
     "https://reacttutorials-oqxktqand-bmwdejfs-projects.vercel.app",
 ]
@@ -58,9 +56,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
