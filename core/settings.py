@@ -30,12 +30,15 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', 'localhost', '.now.sh']
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', 'localhost', '.now.sh', '*']
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-    "https://reacttutorials-oqxktqand-bmwdejfs-projects.vercel.app",
+
     "http://localhost:3000",
+    "https://django-tutorial-one.vercel.app/graphql",
+    "https://django-tutorial-one.vercel.app/",
+    "https://reacttutorials-oqxktqand-bmwdejfs-projects.vercel.app",
 ]
 
 
