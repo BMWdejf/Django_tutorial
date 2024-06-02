@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', 'localhost', '.now.sh', '*']
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "https://django-tutorial-one.vercel.app/",
+    "https://formspree-app.vercel.app/",
     "https://reacttutorials-oqxktqand-bmwdejfs-projects.vercel.app",
 ]
 
